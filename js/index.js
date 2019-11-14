@@ -96,3 +96,15 @@ const animateAboutSection = () => {
 
 window.addEventListener('load', animateAboutSection);
 window.addEventListener('resize', animateAboutSection);
+
+//Menu Active link on Tab and Mobile view
+const menuContainer = document.querySelector('.navbar_items');
+const menuLinks = menuContainer.getElementsByClassName('nav-btn');
+
+for (let i = 0; i < menuLinks.length; i++) {
+  menuLinks[i].addEventListener("click", function() {
+    let currentLink = document.getElementsByClassName("current");
+    currentLink[0].className = currentLink[0].className.replace(" current", "");
+    this.className += " current";
+  });
+}
