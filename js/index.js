@@ -108,3 +108,39 @@ for (let i = 0; i < menuLinks.length; i++) {
     this.className += " current";
   });
 }
+
+//Testimonial Slideshow
+var slideInterval, auto = 'true',  slideIndex = 0;
+
+const showSlides = (n) =>{
+    let i; 
+    const slides = document.getElementsByClassName('testimonial_slide');
+    const imgControl = document.getElementsByClassName('client');
+
+    if(n > slides.length){ slideIndex = 1 }
+    if(n < 1){ slideIndex = slides.length }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";        
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 } 
+    if(slideIndex < 0){ slideIndex = slides.length }
+
+    for(i = 0; i < imgControl.length; i++){
+        imgControl[i].className = imgControl[i].className.replace(" current","");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    imgControl[slideIndex - 1].className += " current";
+
+    slideInterval = setTimeout(showSlides, 10000);
+}
+
+const currentSlide = n =>{
+    clearTimeout(slideInterval);
+    showSlides(slideIndex = n - 1); 
+}
+
+showSlides();

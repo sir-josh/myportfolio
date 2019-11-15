@@ -185,6 +185,10 @@ nav {
     height: 88%;
     border: 0.8rem solid #fff;
     transform: translateY(8rem); }
+    .header_rightside figure img {
+      position: absolute;
+      height: 100%;
+      width: 100%; }
   .header .btn-header {
     font-size: 1.4rem;
     font-weight: 500;
@@ -421,7 +425,8 @@ nav {
     box-shadow: 0 0 3.5rem rgba(0, 0, 0, 0.08);
     transform: translate(3rem, 3rem);
     width: 110%;
-    text-align: center; }
+    text-align: center;
+    /* Fading animation */ }
     .testimonial_card--company {
       font-family: "Pacifico", cursive;
       font-size: 3.2rem;
@@ -441,21 +446,45 @@ nav {
       color: #FF5253;
       font-weight: 600;
       font-size: 2rem; }
+    .testimonial_card--img .current img {
+      background: #FF5253; }
     .testimonial_card--img .client {
       display: inline-block;
       margin: 3rem 2rem 0;
       height: 100%;
-      width: auto; }
+      width: auto;
+      cursor: pointer; }
       .testimonial_card--img .client img {
         border: 0.4rem solid rgba(163, 163, 169, 0.38); }
-      .testimonial_card--img .client--2 img {
-        border: 0.4rem solid #FF5253; }
       .testimonial_card--img .client img {
         border-radius: 50%;
         object-fit: cover;
         width: 10rem;
         height: 10rem;
         box-shadow: 0 0 3.5rem rgba(0, 0, 0, 0.08); }
+    .testimonial_card .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .3;
+    transform: scale(0.2); }
+  to {
+    opacity: 1;
+    transform: scale(1); } }
+
+@keyframes fade {
+  from {
+    opacity: .3;
+    transform: scale(0.2); }
+  to {
+    opacity: 1;
+    transform: scale(1); } }
+  .testimonial_slide {
+    display: none; }
 
 .contact {
   grid-column: full-start/full-end;

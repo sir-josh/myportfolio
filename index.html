@@ -35,6 +35,7 @@
             <svg id="morph" height="100%" width="100%" viewBox="0 0 1440 900" preserveAspectRatio="none">
                 <path class="morph" d="M0 0h1440v891.372c-469.456 73.51-878.5-357.044-1440 0V0z" fill="#FF5253"></path>
             </svg>
+            
             <div class="inner-container">
                 <div class="header_content">
                     <div class="header_leftside">
@@ -48,7 +49,9 @@
                         <button class="btn-header">Download Resume</button>
                     </div>
                     <div class="header_rightside">
-                        <figure class="image-bkground-shape"></figure>
+                        <figure class="image-bkground-shape">
+                            <img src="img/cropped image.svg" alt="My photo">
+                        </figure>
                     </div>
                 </div>
             </div>
@@ -207,31 +210,71 @@
                 <div class="testimonial">
                     <div class="testimonial_container">
                         <div class="testimonial_card">
-                            <p class="testimonial_card--company">Pendeline Moves</p>
-                            <div class="testimonial_card--comment">
-                                <div class="left-quote">
-                                    <img src="img/left-quote.png" alt="quotation mark">
+                            <div class="testimonial_slide fade">
+                                <p class="testimonial_card--company">Pinnacle Express</p>
+                                <div class="testimonial_card--comment">
+                                    <div class="left-quote">
+                                        <img src="img/left-quote.png" alt="quotation mark">
+                                    </div>
+                                    <div class="testimonial_card--comment-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua. Tempor nec feugiat nisl pretium fusce id velit ut
+                                        tortor.
+                                    </div>
+                                    <div class="right-quote">
+                                        <img src="img/right-quote.png" alt="quotation mark">
+                                    </div>
                                 </div>
-                                <div class="testimonial_card--comment-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut
-                                    labore et dolore magna aliqua. Tempor nec feugiat nisl pretium fusce id velit ut
-                                    tortor.
-                                </div>
-                                <div class="right-quote">
-                                    <img src="img/right-quote.png" alt="quotation mark">
-                                </div>
+                                <p class="testimonial_card--name">Juliet Christabel | Financial Consultant</p>
                             </div>
-                            <p class="testimonial_card--name">Chris Matt | System Analyst</p>
+
+                            <div class="testimonial_slide fade">
+                                <p class="testimonial_card--company">Pendeline Moves</p>
+                                <div class="testimonial_card--comment">
+                                    <div class="left-quote">
+                                        <img src="img/left-quote.png" alt="quotation mark">
+                                    </div>
+                                    <div class="testimonial_card--comment-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua. Tempor nec feugiat nisl pretium fusce id velit ut
+                                        tortor.
+                                    </div>
+                                    <div class="right-quote">
+                                        <img src="img/right-quote.png" alt="quotation mark">
+                                    </div>
+                                </div>
+                                <p class="testimonial_card--name">Chris Matt | System Analyst</p>
+                            </div>
+
+                            <div class="testimonial_slide fade">
+                                <p class="testimonial_card--company">MooveInn</p>
+                                <div class="testimonial_card--comment">
+                                    <div class="left-quote">
+                                        <img src="img/left-quote.png" alt="quotation mark">
+                                    </div>
+                                    <div class="testimonial_card--comment-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut
+                                        labore et dolore magna aliqua. Tempor nec feugiat nisl pretium fusce id velit ut
+                                        tortor.
+                                    </div>
+                                    <div class="right-quote">
+                                        <img src="img/right-quote.png" alt="quotation mark">
+                                    </div>
+                                </div>
+                                <p class="testimonial_card--name">Celestine Brown | Product Developer</p>
+                            </div>
                             <div class="testimonial_card--img">
                                 <div class="client client--1">
-                                    <img src="img/client1.jpg" alt="My client Michelle">
+                                    <img src="img/client1.jpg" alt="My client Michelle" onclick="currentSlide(1)">
                                 </div>
-                                <div class="current client client--2">
-                                    <img src="img/client2.jpg" alt="My client Chris">
+                                <div class="client client--2">
+                                    <img src="img/client2.jpg" alt="My client Chris" onclick="currentSlide(2)">
                                 </div>
                                 <div class="client client--3">
-                                    <img src="img/client3.jpg" alt="My client Jackson">
+                                    <img src="img/client3.jpg" alt="My client Jackson" onclick="currentSlide(3)">
                                 </div>
                             </div>
                         </div>
