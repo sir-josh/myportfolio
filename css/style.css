@@ -185,10 +185,6 @@ nav {
     height: 88%;
     border: 0.8rem solid #fff;
     transform: translateY(8rem); }
-    .header_rightside figure img {
-      position: absolute;
-      height: 100%;
-      width: 100%; }
   .header .btn-header {
     font-size: 1.4rem;
     font-weight: 500;
