@@ -146,7 +146,7 @@ nav {
 
 .header {
   grid-column: full-start/full-end;
-  background: url("/img/background-shapes.png") no-repeat center center/contain; }
+  background: url("../img/background-shapes.png") no-repeat center center/contain; }
   .header_content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1062,7 +1062,7 @@ nav {
     nav .navbar ul.navbar_show {
       display: block; }
   .header {
-    background: url("/img/background-shapes.png") no-repeat 2rem 4rem/cover, #FF5253;
+    background: url("../img/background-shapes.png") no-repeat 2rem 4rem/cover, #FF5253;
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%); }
     .header_content {
       display: block;
@@ -1277,7 +1277,7 @@ nav {
     margin: 0 auto; }
   .header {
     grid-column: full-start/full-end;
-    background: url("/img/background-shapes.png") no-repeat center center/contain;
+    background: url("../img/background-shapes.png") no-repeat center center/contain;
     position: relative; }
     .header_content {
       display: grid;
@@ -1323,7 +1323,7 @@ nav {
   .btn-group > *:first-child {
     margin-right: 1.6rem; }
   .header {
-    background: url("/img/background-shapes.png") repeat-y 0 0/contain, #FF5253;
+    background: url("../img/background-shapes.png") repeat-y 0 0/contain, #FF5253;
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0 90%); }
     .header_content {
       padding: 0 1rem; }
