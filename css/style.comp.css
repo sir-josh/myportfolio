@@ -574,7 +574,7 @@ nav {
       color: #fff; }
 
 .about_header {
-  background: url("/img/background-shapes.png") no-repeat center center/cover, #FF5253;
+  background: url("../img/background-shapes.png") no-repeat center center/cover, #FF5253;
   grid-column: full-start / full-end;
   overflow: hidden; }
   .about_header p {
